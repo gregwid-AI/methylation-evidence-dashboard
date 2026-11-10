@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <title>Full Reports | Methylation Evidence Dashboard</title>
+  <script>
+    (() => {
+      const param = new URLSearchParams(window.location.search).get("scoutTheme");
+      const theme =
+        param || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      document.documentElement.setAttribute("data-theme", theme);
+    })();
+  </script>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body data-page="reports">
+  <a class="skip" href="#main">Skip to content</a>
+  <header><div class="shell topbar">
+    <a class="brand" href="index.html"><span class="brand-icon" aria-hidden="true">m</span><span>Methylation<small>Evidence dashboard</small></span></a>
+    <nav aria-label="Main navigation"><a href="index.html">Executive summary</a><a href="reports.html" aria-current="page">Full reports</a><a href="references.html">References</a><button class="theme-toggle" type="button" aria-label="Switch color theme">Switch theme</button></nav>
+  </div></header>
+  <main id="main" class="shell">
+    <div class="page-heading"><p class="eyebrow">Source library / Complete publication copies</p><h1>Full reports. Clinical detail intact.</h1><p class="lede">Two reports, nine pages. Read the searchable page-by-page text or download the redacted PDFs with their original layout.</p></div>
+    <aside class="notice"><p><strong>Source material, not endorsed guidance.</strong> Everything below is transcribed from the supplied reports, apart from privacy redactions. Dose schedules, interaction claims, laboratory targets, and projected results have not been approved by a treating clinician through this website. Do not use the protocols to change treatment. See the <a href="references.html#claim-audit">claim audit and evidence limitations</a> first.</p><p><strong>Redactions:</strong> patient names, testing identifiers, and care-provider details are removed. Clinical detail, age, genetic findings, medication and supplement information, and source claims remain. These copies are not guaranteed anonymous. Text extraction can change the reading order of tables; the redacted PDFs retain the source layout.</p></aside>
+    <div class="toolbar">
+      <div class="field"><label for="report-search">Search source text (both reports)</label><input id="report-search" type="search" placeholder="Try lithium, COMT, homocysteine..." autocomplete="off"></div>
+      <div class="field"><label for="report-filter">Report</label><select id="report-filter"><option value="all">Both reports</option><option value="report-1">01 / Comprehensive dossier</option><option value="report-2">02 / Clinical briefing</option></select></div>
+      <button id="expand-pages" type="button">Expand all pages</button>
+      <button id="print-reports" type="button">Print visible pages</button>
+    </div>
+    <p id="report-status" class="status" role="status" aria-live="polite">Loading the redacted source reports...</p>
+    <div id="report-content"></div>
+    <noscript><div class="notice"><p>Enable JavaScript for searchable web transcripts, or download the complete redacted PDFs directly:</p><p><a href="downloads/report-1.pdf">Comprehensive dossier (7 pages)</a> &middot; <a href="downloads/report-2.pdf">Clinical briefing (2 pages)</a></p></div></noscript>
+    <aside class="notice"><p><strong>Two source versions, not one reconciled protocol.</strong> For example, the short briefing proposes inositol and a higher L-tyrosine range, while the dossier cautions against inositol with lithium and revises tyrosine use. Both source versions remain intact; the website does not resolve these differences into a treatment recommendation.</p></aside>
+  </main>
+  <footer><div class="shell footer-row"><p>Full source statements remain available for review. A citation in a report does not mean that the cited study supports every associated claim.</p><p><a href="index.html">Executive summary</a> &nbsp; / &nbsp; <a href="references.html">Evidence &amp; sources</a></p></div></footer>
+</body>
+</html>

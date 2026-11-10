@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="description" content="Executive summary, complete redacted clinical briefings, and an independently linked evidence reference library.">
+  <title>Executive Summary | Methylation Evidence Dashboard</title>
+  <script>
+    (() => {
+      const param = new URLSearchParams(window.location.search).get("scoutTheme");
+      const theme =
+        param || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      document.documentElement.setAttribute("data-theme", theme);
+    })();
+  </script>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header><div class="shell topbar">
+    <a class="brand" href="index.html"><span class="brand-icon" aria-hidden="true">m</span><span>Methylation<span><small>Evidence dashboard</small></span></span></a>
+    <nav aria-label="Main navigation"><a href="index.html" aria-current="page">Executive summary</a><a href="reports.html">Full reports</a><a href="references.html">References</a><button class="theme-toggle" type="button" aria-label="Switch color theme">Switch theme</button></nav>
+  </div></header>
+  <main id="main" class="shell">
+    <div class="hero">
+      <div>
+        <p class="eyebrow">Clinical briefing / Executive overview</p>
+        <h1>A clearer view of a complex clinical picture.</h1>
+        <p class="lede">Methylation, psychiatric pharmacotherapy, and proposed nutritional support: two source reports, preserved in full, with the evidence kept in perspective.</p>
+        <div class="actions"><a class="button primary" href="reports.html">Explore the full reports <span aria-hidden="true">&rarr;</span></a><a class="button" href="references.html">Review the evidence</a></div>
+        <p class="meta">Source documents: November 2026 &nbsp; / &nbsp; Evidence checked: November 10, 2026</p>
+      </div>
+      <aside class="card snapshot" aria-labelledby="snapshot-heading">
+        <span class="pill">Reported case context</span>
+        <h2 id="snapshot-heading" style="margin-top:20px">The clinical snapshot</h2>
+        <dl>
+          <dt>Presentation described in the reports</dt><dd>Age 17; depression, OCD, ADHD, bipolar-spectrum traits, self-injury, binge eating, insomnia, and brain fog.</dd>
+          <dt>Prescription regimen reported</dt><dd>Rexulti &middot; Lithium &middot; Luvox &middot; Concerta</dd>
+          <dt>Central source hypothesis</dt><dd>Folate/B12-dependent methylation and catecholamine metabolism may intersect with symptoms and medication response.</dd>
+        </dl>
+        <p class="fine" style="margin-top:20px">A source hypothesis, not a confirmed diagnosis or an independently verified medical record.</p>
+      </aside>
+    </div>
+    <div class="stats" aria-label="Document coverage">
+      <div class="stat"><strong>2</strong><span>Complete source reports</span></div>
+      <div class="stat"><strong>9</strong><span>Original pages preserved</span></div>
+      <div class="stat"><strong>4</strong><span>Reported prescriptions</span></div>
+      <div class="stat"><strong>6</strong><span>Reported genetic-marker groups</span></div>
+    </div>
+    <aside class="notice" aria-label="Important medical and privacy context">
+      <p><strong>Read as a document review, not a treatment plan.</strong> The reports contain unverified causal claims, supplement doses, medication-change instructions, and projected outcomes. They are retained for transparency, not endorsed. Do not start, stop, change, or time medicines or supplements based on this site; review them with the treating clinician and pharmacist.</p>
+      <p><strong>Privacy:</strong> patient names, testing identifiers, and care-provider details have been removed from both PDFs and web text. Detailed clinical information remains, so these copies are <strong>redacted, not guaranteed anonymous</strong>. No actual lab results or measured treatment outcomes are supplied.</p>
+    </aside>
+    <section class="section" aria-labelledby="takeaways">
+      <div class="section-heading"><h2 id="takeaways">Three executive takeaways</h2><p>The decision-relevant view, with a clear boundary between what the reports propose and what external sources establish.</p></div>
+      <div class="grid three">
+        <article class="card"><div class="number">01 / MEDICATION SAFETY</div><h3>Reconcile the regimen before adding to it.</h3><p>The dossier raises interaction concerns around brexpiprazole and fluvoxamine, plus lithium monitoring. Exact dose decisions depend on indication, inhibitor strength, patient factors, and the current label; the report's fixed-dose rules should not be treated as prescriptions.</p><a class="cite" href="references.html#R04">R04 / Prescribing information &rarr;</a></article>
+        <article class="card"><div class="number">02 / EVIDENCE BOUNDARIES</div><h3>Genetics is context, not a complete explanation.</h3><p>The source attributes symptoms to MTHFR, MTR/MTRR, and COMT. These reports do not establish that the variants caused this individual's symptoms. CPIC does not support using SLC6A4 results for antidepressant prescribing; AACAP cautions against selecting psychotropics through pharmacogenetic tests in youth.</p><a class="cite" href="references.html#R03">R03 / CPIC guideline &rarr;</a> <a class="cite" href="references.html#R05">R05 / Youth guidance &rarr;</a></article>
+        <article class="card"><div class="number">03 / OUTCOMES &amp; MONITORING</div><h3>Proposals are not observed improvements.</h3><p>The source's laboratory targets, weekly timelines, and remission percentages are proposed or asserted, not this patient's measured results. Adult depression trials and a small adolescent NAC pilot do not validate the entire combined protocol or guarantee symptom resolution.</p><a class="cite" href="references.html#R01">R01 / Folate trials &rarr;</a> <a class="cite" href="references.html#R02">R02 / NAC pilot &rarr;</a></article>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="pathway-heading">
+      <div class="section-heading"><h2 id="pathway-heading">The biochemical model in the reports</h2><p>A navigation map of the proposed mechanism, not proof of deficiency, individual brain chemistry, or a treatment indication.</p></div>
+      <div class="pathway">
+        <div><p class="step">01 &nbsp; FOLATE PROCESSING &rarr;</p><h3>MTHFR / Folate cycle</h3><p>The reports propose reduced active-folate availability and methylfolate support. Common MTHFR variants do not mean folic acid cannot be processed or must be avoided.</p><a class="cite" href="references.html#R06">R06 / CDC clarification</a></div>
+        <div><p class="step">02 &nbsp; ONE-CARBON METABOLISM &rarr;</p><h3>B12 / Methionine / SAMe</h3><p>Vitamin B12 has an established role in methionine synthase and one-carbon metabolism. The reports' claims of individual SAMe depletion and melatonin failure are not demonstrated by supplied laboratory data.</p><a class="cite" href="references.html#R07">R07 / NIH B12 fact sheet</a></div>
+        <div><p class="step">03 &nbsp; CATECHOLAMINE METABOLISM</p><h3>COMT / Dopamine</h3><p>The reports link COMT Val/Val to dopamine clearance and several symptoms. The claimed 300&ndash;400% individual dopamine-clearance rate and symptom-specific causal conclusions are not validated here.</p><a class="cite" href="references.html#claim-audit">View the claim audit</a></div>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="genetics-heading">
+      <div class="section-heading"><h2 id="genetics-heading">Reported pharmacogenomic profile</h2><p>Transcribed from the dossier. The underlying testing laboratory report was not provided; these are not independently confirmed results.</p></div>
+      <div class="table-wrap"><table>
+        <thead><tr><th scope="col">Marker group</th><th scope="col">Source-reported result</th><th scope="col">Interpretation boundary</th></tr></thead>
+        <tbody>
+          <tr><td>MTHFR</td><td>C677T (C/T); intermediate</td><td>Does not alone diagnose folate deficiency or establish a need to avoid folic acid. <a href="references.html#R06">R06</a></td></tr>
+          <tr><td>COMT</td><td>Val158Met (Val/Val); homozygous high</td><td>Does not measure the individual's dopamine level or prove the cause of self-injury, ADHD, or binge eating.</td></tr>
+          <tr><td>MTR / MTRR</td><td>Remethylation impaired; no specific variant supplied</td><td>A claimed bottleneck without an exact genotype or confirmatory biochemical results.</td></tr>
+          <tr><td>CYP2D6</td><td>*1/*4; intermediate</td><td>Potential prescribing relevance must be assessed against the actual laboratory interpretation, medication indication, and interacting medicines. <a href="references.html#R03">R03</a></td></tr>
+          <tr><td>SLC6A4</td><td>L/S; intermediate</td><td>CPIC finds insufficient evidence for clinical use in antidepressant prescribing. <a href="references.html#R03">R03</a></td></tr>
+          <tr><td>CES1A1</td><td>Gly/Gly; extensive (normal)</td><td>The source says normal methylphenidate clearance; this does not establish suitability, efficacy, or absence of clinical risk.</td></tr>
+        </tbody>
+      </table></div>
+    </section>
+    <section class="section" aria-labelledby="review-heading">
+      <div class="section-heading"><h2 id="review-heading">Priority questions for clinical review</h2><p>A discussion framework rather than an actionable supplement or dosing schedule.</p></div>
+      <div class="grid two">
+        <div class="card"><h3>Safety &amp; medication reconciliation</h3><p>Confirm actual prescriptions, indications, doses, formulations, adherence, and all supplements. Ask the prescriber/pharmacist to assess interactions, activation or akathisia, lithium safety, hydration, and appropriate laboratory monitoring.</p></div>
+        <div class="card"><h3>Evidence &amp; progress measurement</h3><p>Separate measured deficiencies from genotype-based hypotheses. Agree on patient-specific goals, validated symptom measures, and laboratory interpretation. Reconcile conflicting supplement proposals between the short briefing and the comprehensive dossier.</p></div>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="documents-heading">
+      <div class="section-heading"><h2 id="documents-heading">The full record, not just the summary</h2><p>All source clinical detail remains in the publication copies, including proposed doses, targets, timelines, and the original bibliography.</p></div>
+      <div class="grid two">
+        <article class="card report-card"><span class="eyebrow">Report 01 / 7 pages</span><h3>Comprehensive clinical dossier</h3><p>Genetic profile; four-drug pharmacology; proposed mitigations and supplementation; daily schedule; symptom mapping; longitudinal testing; and projected outcomes.</p><div class="actions"><a class="button primary" href="reports.html?report=report-1">Read report</a><a class="button" href="downloads/report-1.pdf" download>Redacted PDF</a></div></article>
+        <article class="card report-card"><span class="eyebrow">Report 02 / 2 pages</span><h3>Clinical &amp; biochemical briefing</h3><p>The original concise clinical thesis, symptom-to-mechanism map, supplementation proposals, biomarker targets, and claimed clinical evidence.</p><div class="actions"><a class="button primary" href="reports.html?report=report-2">Read report</a><a class="button" href="downloads/report-2.pdf" download>Redacted PDF</a></div></article>
+      </div>
+    </section>
+    <aside class="notice"><p><strong>If safety is urgent:</strong> if someone may act on self-harm or suicidal thoughts, seek immediate professional help. In the U.S., call or text <a href="https://988lifeline.org/" rel="noreferrer">988</a>; call 911 for immediate danger. Outside the U.S., use local crisis or emergency services.</p></aside>
+  </main>
+  <footer><div class="shell footer-row"><p>Independent document-review dashboard. Not affiliated with a treatment provider, genetic testing company, or supplement vendor. No analytics, cookies, or external fonts.</p><p><a href="reports.html">Full reports</a> &nbsp; / &nbsp; <a href="references.html">Evidence &amp; sources</a><br>Public, redacted clinical material &middot; November 2026</p></div></footer>
+</body>
+</html>
