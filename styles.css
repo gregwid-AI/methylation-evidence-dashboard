@@ -127,6 +127,13 @@ input, select { background: var(--cp-surface); color: var(--cp-text); border: 1p
 .status { color: var(--cp-text-muted); font-size: 13px; min-height: 24px; margin: 8px 0 20px; }
 .source-report { margin-bottom: 40px; }
 .source-head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; margin-bottom: 16px; align-items: center; }
+.source-head .actions { margin-top: 0; }
+.pdf-viewer { display: block; width: 100%; height: 1100px; height: min(1100px, 85vh); min-height: 640px; border: 1px solid var(--cp-border); border-radius: .625rem; background: var(--cp-surface); }
+.pdf-fallback { margin-top: 12px; }
+.pdf-page { margin: 0 0 28px; scroll-margin-top: 20px; }
+.pdf-page figcaption { padding: 12px 0; font-size: 13px; font-weight: 650; color: var(--cp-text-muted); }
+.pdf-page img { display: block; width: 100%; height: auto; border: 1px solid var(--cp-border); }
+.accessible-text { margin-top: 12px; font-size: 12px; }
 details { border: 1px solid var(--cp-border); border-radius: .625rem; background: var(--cp-surface); margin-bottom: 12px; }
 summary { padding: 16px 20px; cursor: pointer; font-weight: 600; }
 details[open] summary { border-bottom: 1px solid var(--cp-border); }
@@ -177,7 +184,10 @@ footer { border-top: 1px solid var(--cp-border); margin-top: 48px; padding: 28px
   .shell { max-width: none; padding: 0; }
   .card, details, .notice { break-inside: avoid; }
   .source-text { font-size: 10pt; padding: 8px; }
-  .source-report details { break-inside: auto; }
+  .source-report details, .pdf-viewer, .pdf-fallback { display: none; }
+  .pdf-page { break-after: page; margin: 0; }
+  .pdf-page figcaption { display: none; }
+  .pdf-page img { border: 0; }
   h1 { font-size: 30pt; }
   a { color: inherit; }
 }
